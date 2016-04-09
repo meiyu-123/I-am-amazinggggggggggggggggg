@@ -27,23 +27,76 @@
             * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        -->
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Hello World</title>
+        <script src="js/raphael-2.1.4.min.js"></script>
+        <script src="js/justgage.js"></script>
+         <script type="text/javascript"src="js/JQUEERY.JS"></script>
+
+<script>
+var gaugemax = 1200 ;
+ $(document).ready(function () {
+  g = new JustGage({
+    id: "gauge",
+    value: 75,
+    min: 0,
+    max: gaugemax,
+    title: "WEIGHT"
+
+  });
+
+
+ $ ( "#poo" ). click (function () {
+     g.refresh (GetWeight(),gaugemax) ; 
+
+
+
+
+   });
+
+
+});
+
+
+ 
+ function  GetWeight () {
+
+ return Math.floor(Math.random() * gaugemax) ;
+
+ }
+
+
+
+</script>
+
     </head>
+
     <body>
         <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+        
+
+        <img width="350" src="img/0001730_17-spruce-ecosmart-checkpoint-friendly-backpack.jpeg"  />
+
+
+  
+ <h3> <p> My name is Meiyu, I have made and coded a 'Smart Backpack.' </p>
+  <h3>  <p> I have worked with the edison board on this project. </p>
+  <h3> <p> You bluetooth your phone/ipod/tablet with the edison through the mobile app.</p> 
+
+
+<div id="gauge" class="200x160px"></div>
+
         </div>
+
+
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+
     </body>
 </html>
