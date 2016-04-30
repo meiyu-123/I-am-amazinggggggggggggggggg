@@ -18,12 +18,12 @@
  under the License.
 -->
 <widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+    <name>Smart Backpack</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+         It is meiyu's awesomness
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="" href="">
+        Meiyu O'Sullivan
     </author>
     <content src="index.html" />
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
