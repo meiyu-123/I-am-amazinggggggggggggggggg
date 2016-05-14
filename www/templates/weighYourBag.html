@@ -1,0 +1,31 @@
+<ion-view title="Weigh Your Bag" id="page4" style="background-color:#CA8CDD;" class=" ">
+    <ion-content padding="true" class="has-header">
+        <div id="weighYourBag-markdown4" style="color:#000000;" class=" ">
+            <p>Here you can weigh your bag. you input your weight. The app will then caluclate 10% of your bodyweight, which is the maximum weight you should carry to avoid back, shoulder and neck strain.</p>
+
+            <p>An alarm will sound if the weiht you are carrying is too heavy.</p>
+        </div>
+        <form id="weighYourBag-form2" class="list ">
+            <ion-item class="range range-positive " id="weighYourBag-range2">Range
+                <input type="range" value="50" min="0" max="100">
+            </ion-item>
+        </form>
+        <div id="gauge" style="width:200px;height:100px"></div>
+       <script type="text/javascript">
+       var gaugemax = 1200 ;
+ 
+  g = new JustGage({
+    id: "gauge",
+    value: 75,
+    min: 0,
+    max: 1200,
+    title: "WEIGHT"
+});
+           
+
+
+
+       </script> 
+
+    </ion-content>
+</ion-view>
