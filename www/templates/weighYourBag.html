@@ -5,27 +5,11 @@
 
             <p>An alarm will sound if the weiht you are carrying is too heavy.</p>
         </div>
-        <form id="weighYourBag-form2" class="list ">
-            <ion-item class="range range-positive " id="weighYourBag-range2">Range
-                <input type="range" value="50" min="0" max="100">
-            </ion-item>
-        </form>
-        <div id="gauge" style="width:200px;height:100px"></div>
-       <script type="text/javascript">
-       var gaugemax = 1200 ;
- 
-  g = new JustGage({
-    id: "gauge",
-    value: 75,
-    min: 0,
-    max: 1200,
-    title: "WEIGHT"
-});
-           
-
-
-
-       </script> 
-
+        <div ng-controller="weighYourBagCtrl">
+            <input type="number" placeholder="" style="width:100%" ng-model="peoplesweight">
+            <div>{{peoplesweight}}</div>
+        </div>
+<div id="gauge" style="width:100%"></div>
+        
     </ion-content>
 </ion-view>

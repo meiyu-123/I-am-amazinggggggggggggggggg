@@ -8,11 +8,14 @@ angular.module('app.controllers', [])
 
   g = new JustGage({
     id: "gauge",
-    value: 75,
+    value: getRandomInt(0, 100),
     min: 0,
-    max: 1200,
-    title: "WEIGHT"
-});
+    max: 100,
+    title: "WEIGHT",
+    titleFontColor:"yellow",
+    labelFontColor: "yellow"
+  });
+;
            
 
 
